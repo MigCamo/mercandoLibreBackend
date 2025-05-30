@@ -28,7 +28,7 @@ const swaggerFile = require('./swagger-output.json')
 app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 // Bitacora
-app.use(require("../backendnode/middlewares/bitacora.middleware"))
+app.use(require("../mercandoLibreBackend/middlewares/bitacora.middleware"))
 
 // Rutas
 app.use('/api/categorias', require('./routes/categorias.routes'))
@@ -42,7 +42,7 @@ app.use('/api/pedidos', require('./routes/pedidos.routes'))
 app.get(/.*/, (req, res) => { res.status(404).send("Recurso no encontrado") })
 
 // Middleware para el manejo de errores (Debe ser el último middleware a utilizar)
-const errorhandler = require('../backendnode/middlewares/errorhandler.middleware')
+const errorhandler = require('../mercandoLibreBackend/middlewares/errorhandler.middleware')
 app.use(errorhandler)
 
 // Inicia el servidor web en el puerto SERVER_PORT
