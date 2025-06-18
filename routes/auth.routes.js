@@ -5,9 +5,6 @@ const Authorize = require('../middlewares/auth.middleware')
 // POST: api/auth
 router.post('/', auth.login)
 
-// Nueva ruta para renovar el access token
-router.post('/refresh', auth.refresh);
-
 // GET: api/auth/tiempo
 router.get('/tiempo', Authorize('Usuario,Administrador'), auth.tiempo)
 

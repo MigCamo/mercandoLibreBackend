@@ -20,6 +20,9 @@ module.exports = {
       precio: {
         type: Sequelize.DECIMAL(10,2)
       },
+      cantidad: {
+        type: Sequelize.INTEGER
+      },
       archivoid: {
         allowNull: true,
         type: Sequelize.INTEGER,

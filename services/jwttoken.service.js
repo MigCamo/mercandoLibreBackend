@@ -1,37 +1,33 @@
 const jwt = require('jsonwebtoken')
-const jwtAccessSecret = process.env.JWT_ACCESS_SECRET
-const jwtRefreshSecret = process.env.JWT_REFRESH_SECRET
 const ClaimTypes = require('../config/claimtypes')
+require('dotenv').config();
 
-const GeneraToken = (email, nombre, rol) => {
+const jwtAccessSecret = process.env.JWT_ACCESS_SECRET
+
+const GeneraToken = (email, nombre, rol, sessionId) => {
     // Utilizamos los nombres de Claims estándar
     const token = jwt.sign({
         [ClaimTypes.Name]: email,
         [ClaimTypes.GivenName]: nombre,
         [ClaimTypes.Role]: rol,
+        sessionId: sessionId,
         "iss": "ServidorFeiJWT",
         "aud": "ClientesFeiJWT"
     },
     jwtAccessSecret, {
-        expiresIn: '10m',    // 20 minutos
+        expiresIn: '1m',    // 20 minutos
     })
     return token;
 }
 
-const GeneraRefreshToken = (email) => {
-    return jwt.sign(
-        { email },
-        jwtRefreshSecret,
-        { expiresIn: '10m' }
-    );
-};
 
-const RecargarToken = (email, nombre, rol) => {
+const RecargarToken = (email, nombre, rol, sessionId) => {
     // Utilizamos los nombres de Claims estándar
     const token = jwt.sign({
         [ClaimTypes.Name]: email,
         [ClaimTypes.GivenName]: nombre,
         [ClaimTypes.Role]: rol,
+        sessionId: sessionId,
         "iss": "ServidorFeiJWT",
         "aud": "ClientesFeiJWT"
     },
@@ -59,4 +55,4 @@ const TiempoRestanteToken = (req) => {
     }
 }
 
-module.exports = { GeneraToken, TiempoRestanteToken, GeneraRefreshToken, RecargarToken }
+module.exports = { GeneraToken, TiempoRestanteToken, RecargarToken }

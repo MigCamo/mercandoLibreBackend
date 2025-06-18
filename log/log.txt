@@ -1,7 +1,12 @@
-Thu May 29 2025 10:09:11 GMT-0600 (hora estándar central) - 500 - ::1 - Anónimo - No se ha podido procesar la petición. Inténtelo nuevamente más tarde.
-Thu May 29 2025 10:09:16 GMT-0600 (hora estándar central) - 500 - ::1 - Anónimo - No se ha podido procesar la petición. Inténtelo nuevamente más tarde.
-Thu May 29 2025 10:09:23 GMT-0600 (hora estándar central) - 500 - ::1 - Anónimo - No se ha podido procesar la petición. Inténtelo nuevamente más tarde.
-Thu May 29 2025 10:09:41 GMT-0600 (hora estándar central) - 500 - ::1 - Anónimo - No se ha podido procesar la petición. Inténtelo nuevamente más tarde.
-Thu May 29 2025 23:08:09 GMT-0600 (hora estándar central) - 401 - ::1 - Anónimo - jwt expired
-Thu May 29 2025 23:20:40 GMT-0600 (hora estándar central) - 401 - ::1 - Anónimo - jwt expired
-Fri May 30 2025 08:54:48 GMT-0600 (hora estándar central) - 401 - ::1 - Anónimo - jwt expired
+Tue Jun 17 2025 16:23:57 GMT-0600 (hora estándar central) - 401 - ::1 - Anónimo - jwtAccessSecret is not defined
+Tue Jun 17 2025 16:25:59 GMT-0600 (hora estándar central) - 401 - ::1 - Anónimo - jwtAccessSecret is not defined
+Tue Jun 17 2025 16:29:11 GMT-0600 (hora estándar central) - 401 - ::1 - Anónimo - jwtAccessSecret is not defined
+Tue Jun 17 2025 16:33:01 GMT-0600 (hora estándar central) - 401 - ::1 - Anónimo - TOKEN_EXPIRED
+Tue Jun 17 2025 16:40:11 GMT-0600 (hora estándar central) - 401 - ::1 - Anónimo - TOKEN_EXPIRED
+Tue Jun 17 2025 17:24:13 GMT-0600 (hora estándar central) - 401 - ::1 - Anónimo - Cannot read properties of undefined (reading 'startsWith')
+Tue Jun 17 2025 17:25:10 GMT-0600 (hora estándar central) - 401 - ::1 - Anónimo - Acceso denegado
+Tue Jun 17 2025 17:34:57 GMT-0600 (hora estándar central) - 500 - ::ffff:127.0.0.1 - Anónimo - ClaimTypes is not defined
+Tue Jun 17 2025 17:39:55 GMT-0600 (hora estándar central) - 401 - ::ffff:127.0.0.1 - Anónimo - jwt expired
+Tue Jun 17 2025 17:42:02 GMT-0600 (hora estándar central) - 401 - ::ffff:127.0.0.1 - Anónimo - Acceso denegado
+Tue Jun 17 2025 18:01:18 GMT-0600 (hora estándar central) - 401 - ::1 - Anónimo - invalid signature
+Tue Jun 17 2025 18:15:57 GMT-0600 (hora estándar central) - 401 - ::1 - Anónimo - jwt expired

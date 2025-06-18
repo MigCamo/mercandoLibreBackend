@@ -6,7 +6,7 @@ router.post('/', Authorize('Usuario,Administrador'), pedidos.create)
 
 router.get('/', Authorize('Administrador'), pedidos.getAll)
 
-router.get('/:usuarioid', Authorize('Usuario'), pedidos.getByUsuario)
+router.get('/:email', Authorize('Usuario'), pedidos.getByUsuario)
 
 router.get('/detalles/:pedidoid', Authorize('Usuario,Administrador'), pedidos.getDetalles)
 

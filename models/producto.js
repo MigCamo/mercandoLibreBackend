@@ -28,6 +28,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.DECIMAL(10,2),
             allowNull: false
         },
+        cantidad: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
         archivoid: {
             type: DataTypes.INTEGER,
             allowNull: true
