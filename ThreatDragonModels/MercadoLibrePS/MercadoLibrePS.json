@@ -2491,8 +2491,8 @@
                 "text": "Usuarios"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2588,9 +2588,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "5eaaf5d9-acf2-45e8-8b31-5d79c8154bbe",
+                  "title": "Suplantación de identidad",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Acción de amenaza destinada a acceder y utilizar las credenciales de otro usuario, como el nombre de usuario y la contraseña.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -2607,8 +2625,8 @@
                 "text": "Administrador"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2704,9 +2722,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "d71c3692-237b-4f23-8432-ebe494b90c84",
+                  "title": "Suplantación de identidad",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Acción de amenaza destinada a acceder y utilizar las credenciales de otro usuario, como el nombre de usuario y la contraseña.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -2871,11 +2907,13 @@
                 "text": "Base de datos"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2971,164 +3009,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "e2671b8c-b62e-4477-8313-3bad0355394c",
+                  "title": "Modificación sin autorización",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Un atacante podría modificar registros directamente en la base de datos si obtiene acceso no autorizado, alterando datos como precios o historial de pedidos.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Web Request",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Web Request"
-            ],
-            "id": "8636f32e-3fc9-40eb-afcf-0f15d28ad241",
-            "source": {
-              "cell": "abb9eaef-b605-45b3-9bbe-8a242bc154f7",
-              "port": "2684caa2-a70c-4499-94e1-f6924cd112b4"
-            },
-            "target": {
-              "cell": "fee86541-dae2-42cd-820e-ee1c1e0b85a4",
-              "port": "37b42151-ef2e-42a6-8768-5960cda8cf4d"
-            },
-            "vertices": [
-              {
-                "x": 300,
-                "y": 310
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Web response",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Web response"
-            ],
-            "id": "58f0234b-c8c8-44d2-9188-f377f570baa4",
-            "source": {
-              "cell": "fee86541-dae2-42cd-820e-ee1c1e0b85a4",
-              "port": "6dfe6ab8-27b7-4b35-9115-80b0d5a9df09"
-            },
-            "target": {
-              "cell": "5923f004-a434-4730-9e77-26c92e962593",
-              "port": "cc3f77e4-8a8e-4a21-98f8-d4abeaa1685a"
-            },
-            "vertices": [
-              {
-                "x": 420,
-                "y": -30
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Web request",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Web request"
-            ],
-            "id": "3978a688-2330-470e-a9f9-3c996d6d3e48",
-            "source": {
-              "cell": "5923f004-a434-4730-9e77-26c92e962593",
-              "port": "2684caa2-a70c-4499-94e1-f6924cd112b4"
-            },
-            "target": {
-              "cell": "fee86541-dae2-42cd-820e-ee1c1e0b85a4",
-              "port": "6dfe6ab8-27b7-4b35-9115-80b0d5a9df09"
-            },
-            "vertices": [
-              {
-                "x": 310,
-                "y": 70
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -3185,56 +3093,6 @@
               {
                 "x": 590,
                 "y": 130
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Web response",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Web response"
-            ],
-            "id": "bad72339-fa2d-4fed-a9dc-5679737a9db9",
-            "source": {
-              "cell": "fee86541-dae2-42cd-820e-ee1c1e0b85a4",
-              "port": "197cf9bb-6f60-4e5f-b601-602b40a1c662"
-            },
-            "target": {
-              "cell": "abb9eaef-b605-45b3-9bbe-8a242bc154f7",
-              "port": "cc3f77e4-8a8e-4a21-98f8-d4abeaa1685a"
-            },
-            "vertices": [
-              {
-                "x": 220,
-                "y": 180
               }
             ]
           },
@@ -3471,12 +3329,304 @@
                 "y": 30
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "fa015e51-ae89-4865-beba-41c2637150d5",
+                  "title": "Intercepción de tráfico en red",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Un atacante podría capturar respuestas HTTP no cifradas para acceder a datos sensibles, como información personal o tokens de sesión.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Web response"
+            ],
+            "id": "bad72339-fa2d-4fed-a9dc-5679737a9db9",
+            "source": {
+              "cell": "fee86541-dae2-42cd-820e-ee1c1e0b85a4",
+              "port": "197cf9bb-6f60-4e5f-b601-602b40a1c662"
+            },
+            "target": {
+              "cell": "abb9eaef-b605-45b3-9bbe-8a242bc154f7",
+              "port": "cc3f77e4-8a8e-4a21-98f8-d4abeaa1685a"
+            },
+            "vertices": [
+              {
+                "x": 220,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "6ad5447b-b21d-4a28-9201-e274312ed4ac",
+                  "title": "Intercepción de tráfico en red",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Un atacante podría capturar respuestas HTTP no cifradas para acceder a datos sensibles, como información personal o tokens de sesión.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Web response"
+            ],
+            "id": "58f0234b-c8c8-44d2-9188-f377f570baa4",
+            "source": {
+              "cell": "fee86541-dae2-42cd-820e-ee1c1e0b85a4",
+              "port": "6dfe6ab8-27b7-4b35-9115-80b0d5a9df09"
+            },
+            "target": {
+              "cell": "5923f004-a434-4730-9e77-26c92e962593",
+              "port": "cc3f77e4-8a8e-4a21-98f8-d4abeaa1685a"
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": -30
+              },
+              {
+                "x": 310,
+                "y": -80
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "9a5ef359-5c94-438e-9f23-952c05bbaaed",
+                  "title": "privilegios",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Un usuario malintencionado podría modificar los parámetros en una solicitud HTTP para acceder a funcionalidades o datos restringidos, como áreas administrativas.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Web request"
+            ],
+            "id": "3978a688-2330-470e-a9f9-3c996d6d3e48",
+            "source": {
+              "cell": "5923f004-a434-4730-9e77-26c92e962593",
+              "port": "2684caa2-a70c-4499-94e1-f6924cd112b4"
+            },
+            "target": {
+              "cell": "fee86541-dae2-42cd-820e-ee1c1e0b85a4",
+              "port": "6dfe6ab8-27b7-4b35-9115-80b0d5a9df09"
+            },
+            "vertices": [
+              {
+                "x": 310,
+                "y": 70
+              },
+              {
+                "x": 450,
+                "y": 120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "77db7525-8a44-4ab6-85c1-2e6db4afeb1c",
+                  "title": "privilegios",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Un usuario malintencionado podría modificar los parámetros en una solicitud HTTP para acceder a funcionalidades o datos restringidos, como áreas administrativas.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Web Request"
+            ],
+            "id": "8636f32e-3fc9-40eb-afcf-0f15d28ad241",
+            "source": {
+              "cell": "abb9eaef-b605-45b3-9bbe-8a242bc154f7",
+              "port": "2684caa2-a70c-4499-94e1-f6924cd112b4"
+            },
+            "target": {
+              "cell": "fee86541-dae2-42cd-820e-ee1c1e0b85a4",
+              "port": "37b42151-ef2e-42a6-8768-5960cda8cf4d"
+            },
+            "vertices": [
+              {
+                "x": 300,
+                "y": 310
+              },
+              {
+                "x": 475,
+                "y": 260
+              }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 20
+    "threatTop": 27
   }
 }
