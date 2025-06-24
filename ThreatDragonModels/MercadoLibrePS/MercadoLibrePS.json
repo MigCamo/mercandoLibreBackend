@@ -1472,8 +1472,8 @@
                 "text": "Crear  cuenta"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1569,12 +1569,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "43cd8d51-6304-49fd-80bf-92e69ecab1b0",
+                  "title": "Exposición de contraseñas y datos personales",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Un atacante podría explotar vulnerabilidades en el almacenamiento de contraseñas o datos personales, como configuraciones incorrectas o falta de cifrado, para acceder a información sensible de los usuarios y comprometer sus cuentas.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -3339,6 +3361,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 13
+    "threatTop": 14
   }
 }
