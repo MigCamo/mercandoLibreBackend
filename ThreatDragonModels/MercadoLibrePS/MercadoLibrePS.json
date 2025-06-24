@@ -1128,6 +1128,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -1211,7 +1212,6 @@
               ]
             },
             "id": "fee86541-dae2-42cd-820e-ee1c1e0b85a4",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Controlador web",
@@ -1247,6 +1247,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -1330,7 +1331,6 @@
               ]
             },
             "id": "abb9eaef-b605-45b3-9bbe-8a242bc154f7",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Usuarios",
@@ -1363,6 +1363,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -1446,7 +1447,6 @@
               ]
             },
             "id": "5923f004-a434-4730-9e77-26c92e962593",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Administrador",
@@ -1479,6 +1479,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -1562,7 +1563,6 @@
               ]
             },
             "id": "9efb27cf-6b1b-4ef4-aeb5-d7b151b39668",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Crear  cuenta",
@@ -1591,16 +1591,19 @@
                 "text": "Base de datos"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -1684,20 +1687,39 @@
               ]
             },
             "id": "b742efb0-0aea-4e69-b6bf-305334cf4f2a",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "0943e896-37ad-457c-98d2-58fe30a80fbe",
+                  "title": "Robo de credenciales",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Un atacante podría obtener las credenciales de la base de datos y utilizarlas para realizar consultas no autorizadas.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -3288,6 +3310,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 11
+    "threatTop": 12
   }
 }
